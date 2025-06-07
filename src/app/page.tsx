@@ -45,7 +45,7 @@ export default function Home() {
         {filteredProducts.length === 0 && (
           <div className="text-center py-12">
             <p className="text-gray-500 text-lg">
-              Tidak ada produk yang ditemukan untuk "{searchTerm}"
+              Tidak ada produk yang ditemukan untuk &quot;{searchTerm}&quot;
             </p>
           </div>
         )}
