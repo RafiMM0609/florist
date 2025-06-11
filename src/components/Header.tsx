@@ -7,13 +7,16 @@ interface HeaderProps {
   onSearchChange: (term: string) => void;
 }
 
-export default function Header({ searchTerm, onSearchChange }: HeaderProps) {
-  return (
-    <header className="bg-white shadow-sm border-b">
+export default function Header({ searchTerm, onSearchChange }: HeaderProps) {  return (
+    <header className="bg-gradient-to-r from-rose-100 to-pink-100 shadow-sm border-b border-rose-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
+        <div className="flex items-center justify-between h-16">          {/* Logo */}
           <div className="flex items-center">
+            <img 
+              src="/images/logo.jpg" 
+              alt="Kagita Craft Logo" 
+              className="h-12 w-auto mr-4 rounded-lg shadow-sm"
+            />
             <h1 className="text-2xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
               Kagita Craft
             </h1>
